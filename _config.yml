@@ -1,0 +1,60 @@
+# ----------------------------------- Basic ---------------------------------- #
+
+title: INTIA
+email: intia@th-koeln.de
+description: >- # this means to ignore newlines until "baseurl:"
+  INTIA Escape game explanation page
+baseurl: ""
+url: ""
+markdown: CommonMarkGhPages
+# ----------------------------------- Theme ---------------------------------- #
+
+theme: intia-theme
+footer_menu: footer
+
+# ---------------------------------- Plugins --------------------------------- #
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  - jekyll-coffeescript
+  - jekyll-seo-tag
+  - jekyll-commonmark-ghpages
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-sass-converter
+  - jekyll-titles-from-headings
+  - jekyll-watch
+github: [metadata]
+sass:
+  style: compressed
+# ------------------------- Defaults and Collections ------------------------- #
+
+# Defaults
+defaults:
+  - scope:
+      type: pages
+      path: pages
+    values:
+      layout: default
+# Collections
+collections_dir: collections
+collections:
+  glossary:
+    output: true
+
+# --------------------------- Includes and Excludes -------------------------- #
+# Exclude from processing.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
