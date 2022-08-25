@@ -1,0 +1,238 @@
+<!--
+The Default layout that everything is using 
+-->
+
+<!-- Control the width with, if sidebars or menus should appear   -->
+
+
+<!DOCTYPE html>
+<html id="default-layout">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <!--<script src="https://methods.intia.de/src/radar/radar.js"></script>-->
+        <script src="/assets/js/radar.js"></script>
+        <!--<link rel="stylesheet" href="https://methods.intia.de/src/radar/radar.css" />-->
+    
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Anleitung zum Packen des INTIA-Koffers | INTIA</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Anleitung zum Packen des INTIA-Koffers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="INTIA Escape game explanation page" />
+<meta property="og:description" content="INTIA Escape game explanation page" />
+<link rel="canonical" href="http://localhost:4000/anleitungen/intia-koffer-packen" />
+<meta property="og:url" content="http://localhost:4000/anleitungen/intia-koffer-packen" />
+<meta property="og:site_name" content="INTIA" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Anleitung zum Packen des INTIA-Koffers" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"INTIA Escape game explanation page","headline":"Anleitung zum Packen des INTIA-Koffers","url":"http://localhost:4000/anleitungen/intia-koffer-packen"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- head scripts -->
+<script src="https://unpkg.com/@botpoison/browser"></script>
+<script type="module" src="/assets/js/main.js"async></script></head>
+
+    <body>
+        <nav class="navbar is-hidden-print is-primary" x-data="{ openNav: false }">
+    <div class="container logo-container">
+        <a class="logo" href="https://intia.de">
+        <img src="/assets/img/INTIAlogo_farbig_horizontal.png">
+        </a>
+        <!--<img src="/assets/img/INTIA_Logoleiste_2022.png">--> 
+ <!--       <div class="navbar-brand">
+            <a href="/" class="">
+                <img src="/assets/img/logo-black.png">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
+                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-end buttons">           
+                Abschschlusstagung
+            </div>
+        </div>
+    -->
+    </div>
+</nav>
+
+    <script>
+    // this page is a demo that is not built, so fudge the module.exports support
+    // define a global `module` so that the actual source file can use it
+    window.module = {};
+  </script>
+  <script src="/assets/js/confetti.js"></script>
+  <script>
+    // define the `module.exports` as the `confetti` global, the way that the
+    // cdn distributed file would
+    window.confetti = module.exports;
+  </script>
+
+<script>
+    window.addEventListener('load', (event) => {
+        loadConfetti()
+    });
+    function loadConfetti() {
+        confetti({ particleCount: 200,
+        spread: 90,
+        origin: { y: 0.6 }
+        });
+    }  
+</script>
+        <div class="arrow-image is-pulled-left is-hidden-mobile">
+            <img id="scroll-up" src="/assets/img/arrow-up.svg" alt="placeholder">
+            <img id="scroll-down" src="/assets/img/arrow-up.svg" alt="placeholder"  class="is-pointed-down">     
+        </div>
+        <div class="accessibility-image is-pulled-left is-hidden-mobile">
+                <a id="changeFontsize"class="button is-rounded is-dark">
+                    <span class="icon is-small">
+                        <i class="fas icon-font-size fa-xs invert"></i>
+                        </span> 
+                    </a>    
+        </div>
+        
+            <section class="hero is-primary is-hidden-print  is-medium   subpage pdf " >
+    <div class="hero-body">
+        <div class="container">
+            
+                <h1 class="overtitle subtitle is-4">Anleitungen</h1>
+            
+            <h1 class="title is-1   title-with-overtitle ">Anleitung zum Packen des INTIA-Koffers</h1>
+            
+                <img src="/assets/img/uploads/dsc_0060.jpg" alt="placeholder"  class="is-rounded is-hidden-mobile">
+            
+            
+                <p class="subtitle is-4">Wenn du dich dazu entschieden hast, dir einen INTIA-Koffer zuzulegen und du bereits alles dafür gekauft hast, kann es an das Packen des Koffers gehen. Hier erfährst du, wie du den physischen Koffer packen kannst. Zu diesem Zweck musst du natürlich schon alles gekauft und dich entschieden haben, welcher Koffer es sein soll.</p>
+            
+            
+            <div class="buttons-hero has-text-centered">
+                <a  onclick="window.history.back()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                    <span class="icon is-small">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span>Zur Übersicht</span>
+                </a>
+                <a  onclick="window.print()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                    <span>Als PDF Herunterladen</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <div id="main" class="content-wrapper has-background-primary-light">
+            
+            
+            
+            <div class="columns is-centered">
+                <div id="content" class="container column is-9-desktop is-11-tablet">
+                    
+                    <!--StartFragment-->
+<h2 id="vorbereitung">Vorbereitung</h2>
+<p>Das benötigst du:</p>
+<ul>
+<li>Koffer</li>
+<li>Würfelschaum (manchmal bereits beim Koffer dabei)</li>
+<li>Smarte Lampen</li>
+<li>Lampenfassungen</li>
+<li>Mini-Computer, mit oder ohne Gehäuse</li>
+<li>Sensoren, Knöpfe und andere Bausteine</li>
+<li>INTIA-Karten-Sets</li>
+<li>Kabel</li>
+</ul>
+<h2 id="aufbau-der-einzelelemente">Aufbau der Einzelelemente</h2>
+<h3 id="leuchtmittel-und-fassung">Leuchtmittel und Fassung</h3>
+<ul>
+<li>Wenn man sich für e27 entschieden hat, dann sind Fassung und Lampe besser separat im Koffer zu verstauen</li>
+<li>Bei Gu10
+<ul>
+<li>Fassung zusammen bauen oder Fertig erwerben</li>
+<li>Glühbirne einsetzen und als eine Einheit in den Koffer geben</li>
+</ul>
+</li>
+</ul>
+<h3 id="mini-computer">Mini-Computer</h3>
+<ul>
+<li>Als Vorbereitung muss der Mini-Computer noch nicht fertig sein</li>
+<li>Das leere Gehäuse reicht zunächst aus</li>
+</ul>
+<h3 id="bausteine">Bausteine</h3>
+<ul>
+<li>Wir empfehlen zwar einen Grundstock an Bausteinen, aber es muss jeder selbst entscheiden, welche Bausteine in den eigenen Koffer kommen sollen</li>
+<li>Die Bausteine sollten grob sortiert werden</li>
+<li>Die Bausteine können im Koffer auch übereinander gestapelt werden</li>
+</ul>
+<h2 id="in-den-koffer-einsetzen">In den Koffer einsetzen</h2>
+<ul>
+<li>Wenn der Würfelschaumstoff noch nicht im Koffer ist, diesen zuerst einsetzen</li>
+<li>Lieber enger als locker einsetzen</li>
+<li>Alle Geräte grob auflegen</li>
+<li>Einige Bausteine lassen sich übereinander stapeln. Bitte versuche, nur ähnliche Bausteine zu stapeln, damit es nicht zu Verwirrung und Suchen kommt</li>
+<li>Je nach Koffer können auch im Deckel des Koffers Elemente verstaut werden. Hier musst du beachten, dass die Spannung höher sein muss, damit nichts aus dem Deckel rausfällt</li>
+<li>Stecker können so eingesetzt werden, dass die Stifte genau zwischen die Schaumstoffblöcke passen</li>
+<li>Nun Blöcke herauslösen
+<ul>
+<li>Mit den größten Elementen anfangen</li>
+<li>Nach dem Lösen die Geräte bereits einsetzen - dies gibt dem Ganzen Stabilität beim weiteren Lösen</li>
+<li>Die losen Würfel nicht sofort entsorgen. Die können genutzt werden um z.B. runde Objekte zu stützen</li>
+<li>Falsch gelöste Würfel können mit etwas Klebstoff wieder befestigt werden</li>
+</ul>
+</li>
+</ul>
+<!--EndFragment-->
+
+                </div>
+            </div> 
+        </div> 
+        
+            <footer class="footer is-hidden-print is-primary">
+        <div class="columns content is-small has-text-centered footer-logos">
+            <div class="column has-text-right"><div class="page-owner">
+                <p class="title" class="has-text-left">Eine Seite von</p>
+                <img src="/assets/img/logos/INTIA_Plattform_Logos_TH_weiss.png">
+                <img src="/assets/img/logos/INTIA_Plattform_Logos_Dites_weiss.png">
+                <div>
+                    <div class="title">www.intia.de</div>
+                        TH-Köln | DITES<br>
+                        Campus Südstadt<br>
+                        Ubierring 48<br>
+                        50678 Köln
+        
+                </div>
+            </div></div>
+            <div class="column has-text-left"><div class="page-sponsor">                
+                <img class="footer-logo-2" src="/assets/img/logos/BMBF_logo.jpg">
+            </div></div>
+
+        </div>
+
+        <div class="content is-small has-text-centered">
+            <p class="">INTIA, 2021</p>
+        </div>
+    
+</footer>
+
+        
+    </body>
+</html>

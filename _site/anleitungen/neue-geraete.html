@@ -1,0 +1,279 @@
+<!--
+The Default layout that everything is using 
+-->
+
+<!-- Control the width with, if sidebars or menus should appear   -->
+
+
+<!DOCTYPE html>
+<html id="default-layout">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <!--<script src="https://methods.intia.de/src/radar/radar.js"></script>-->
+        <script src="/assets/js/radar.js"></script>
+        <!--<link rel="stylesheet" href="https://methods.intia.de/src/radar/radar.css" />-->
+    
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Anleitung zum Hinzufügen und Einrichten neuer Geräte | INTIA</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Anleitung zum Hinzufügen und Einrichten neuer Geräte" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="INTIA Escape game explanation page" />
+<meta property="og:description" content="INTIA Escape game explanation page" />
+<link rel="canonical" href="http://localhost:4000/anleitungen/neue-geraete" />
+<meta property="og:url" content="http://localhost:4000/anleitungen/neue-geraete" />
+<meta property="og:site_name" content="INTIA" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Anleitung zum Hinzufügen und Einrichten neuer Geräte" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"INTIA Escape game explanation page","headline":"Anleitung zum Hinzufügen und Einrichten neuer Geräte","url":"http://localhost:4000/anleitungen/neue-geraete"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- head scripts -->
+<script src="https://unpkg.com/@botpoison/browser"></script>
+<script type="module" src="/assets/js/main.js"async></script></head>
+
+    <body>
+        <nav class="navbar is-hidden-print is-primary" x-data="{ openNav: false }">
+    <div class="container logo-container">
+        <a class="logo" href="https://intia.de">
+        <img src="/assets/img/INTIAlogo_farbig_horizontal.png">
+        </a>
+        <!--<img src="/assets/img/INTIA_Logoleiste_2022.png">--> 
+ <!--       <div class="navbar-brand">
+            <a href="/" class="">
+                <img src="/assets/img/logo-black.png">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
+                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-end buttons">           
+                Abschschlusstagung
+            </div>
+        </div>
+    -->
+    </div>
+</nav>
+
+    <script>
+    // this page is a demo that is not built, so fudge the module.exports support
+    // define a global `module` so that the actual source file can use it
+    window.module = {};
+  </script>
+  <script src="/assets/js/confetti.js"></script>
+  <script>
+    // define the `module.exports` as the `confetti` global, the way that the
+    // cdn distributed file would
+    window.confetti = module.exports;
+  </script>
+
+<script>
+    window.addEventListener('load', (event) => {
+        loadConfetti()
+    });
+    function loadConfetti() {
+        confetti({ particleCount: 200,
+        spread: 90,
+        origin: { y: 0.6 }
+        });
+    }  
+</script>
+        <div class="arrow-image is-pulled-left is-hidden-mobile">
+            <img id="scroll-up" src="/assets/img/arrow-up.svg" alt="placeholder">
+            <img id="scroll-down" src="/assets/img/arrow-up.svg" alt="placeholder"  class="is-pointed-down">     
+        </div>
+        <div class="accessibility-image is-pulled-left is-hidden-mobile">
+                <a id="changeFontsize"class="button is-rounded is-dark">
+                    <span class="icon is-small">
+                        <i class="fas icon-font-size fa-xs invert"></i>
+                        </span> 
+                    </a>    
+        </div>
+        
+            <section class="hero is-primary is-hidden-print  is-medium   subpage pdf " >
+    <div class="hero-body">
+        <div class="container">
+            
+                <h1 class="overtitle subtitle is-4">Anleitungen</h1>
+            
+            <h1 class="title is-1   title-with-overtitle ">Anleitung zum Hinzufügen und Einrichten neuer Geräte</h1>
+            
+            
+                <p class="subtitle is-4"></p>
+            
+            
+            <div class="buttons-hero has-text-centered">
+                <a  onclick="window.history.back()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                    <span class="icon is-small">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span>Zur Übersicht</span>
+                </a>
+                <a  onclick="window.print()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                    <span>Als PDF Herunterladen</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <div id="main" class="content-wrapper has-background-primary-light">
+            
+            
+            
+            <div class="columns is-centered">
+                <div id="content" class="container column is-9-desktop is-11-tablet">
+                    
+                    <!--StartFragment-->
+<p>Das von uns genutzte System nutzt überwiegend Smart Home Geräte, welche das sogenannte ZigBee-Protokoll nutzen. Das hat den Vorteil, dass aus einer Vielzahl von Geräten mit unterschiedlichsten Aufgaben gewählt werden kann. Der Nachteil ist, dass wir keine Out of The Box-Lösung anbieten können und ein paar Schritte nötig sind, um die Geräte hinzuzufügen.</p>
+<h2 id="vorbereitung">Vorbereitung</h2>
+<p>Das benötigst du:</p>
+<ul>
+<li>Stelle sicher, dass du dich mit dem Mini-Computer über das WLAN verbinden kannst.</li>
+<li>Überprüfe zuvor, ob das neue Gerät wirklich ZigBee geeignet ist. Der einfachste Weg hierfür ist zu schauen, ob das Zigbee-Logo auf der Verpackung abgedruckt ist.</li>
+<li>Siehe nach, wie man das Gerät verbindet:
+<ul>
+<li>(Sieh auf die Geräte-Liste auf unserer Plattform - jedes von uns getestetes Gerät haben wir dort aufgelistet) - noch nicht auf der Plattform!</li>
+<li>Schaue in die Anleitung des Gerätes (leider steht dies nicht immer dort)</li>
+<li>Schaue auf die Liste der Unterstützten Geräte von Zigbee2MQTT (EN!)</li>
+</ul>
+</li>
+<li>Die Geräte immer nur nacheinander zu Zigbee2MQTT hinzufügen: Also ein Gerät nach dem anderen.</li>
+<li>Wenn möglich, kontrolliere den Ladestatus der beigelegten Batterien. Es ist bereits vorgekommen, dass die beigelegten Batterien leer waren.</li>
+<li>Du musst etwas Geduld mitbringen. Es sollte zwar nichts schief gehen, aber das kann dennoch immer mal wieder passieren. Die neuen Geräte daher am besten nicht hektisch kurz vor dem ersten Einsatz hinzufügen. Nimm dir Zeit für das Hinzufügen und Einrichten neuer Geräte.</li>
+</ul>
+<h2 id="anlernen-aktivieren">Anlernen Aktivieren</h2>
+<figure>
+  <img src="/assets/img/instructions/z2m_add_new_1.png" alt="Zettel mit technischen Begriffen liegen auf einem Tisch. Dort steht auch ein Bügeleisen." style="height:450px;">
+</figure>
+<ul>
+<li>Öffne die Zigbee2MQTT-Seite auf dem Mini-Computer mit folgender Seite:
+<ul>
+<li>http://intia:8080</li>
+<li>Alternativ: http://192.168.4.100:8080</li>
+<li>Alternativ: Wenn der Mini-Computer ein Display hat, steht dort die Adresse. Diese in die Browser mit dem Zusatz :8080 eingeben.</li>
+</ul>
+</li>
+<li>Beachte, dass auf Mobilgeräten das Verbinden zu einem Netzwerk ohne Internet zu Problemen führen kann.</li>
+<li>Oben rechts auf &quot;Anlernen aktivieren (Alle)” klicken.</li>
+<li>Nach dem Anklicken etwas mehr als vier Minuten verbleiben, um das neue Gerät hinzuzufügen.</li>
+</ul>
+<div class="columns is-centered is-desktop">
+<div class="column is-offset-1">
+<figure>
+  <img src="/assets/img/instructions/z2m_add_new_2.png" alt="Zettel mit technischen Begriffen liegen auf einem Tisch. Dort steht auch ein Bügeleisen." style="height:250px;">
+</figure>
+</div>
+<div class="column">
+<figure>
+  <img src="/assets/img/instructions/z2m_add_new_3.png" alt="Zettel mit technischen Begriffen liegen auf einem Tisch. Dort steht auch ein Bügeleisen." style="height:250px;">
+</figure>
+</div>
+</div>
+<h2 id="gert-hinzufgen">Gerät Hinzufügen</h2>
+<ul>
+<li>Behalte die rechte, untere Ecke der Oberfläche, auf der du gerade das Anlernen gestartet hast, im Blick.</li>
+<li>Bringe das neue Gerät in die Nähe des Mini-Computers.</li>
+<li>Wenn noch nicht geschehen: Setze die Batterie ein und warte 5-10 Sekunden.
+<ul>
+<li>Sollte auf der Webseite etwas unten rechts aufspringen, kann das bedeuten, dass der Anlernprozess bereits startet. Ist das der Fall, solltest du lieber warten. Das Zurücksetzen oder Koppeln des Gerätes ist eventuell nicht mehr notwendig.</li>
+</ul>
+</li>
+<li>Starte den Kopplung-Modus an dem neuen Gerät bzw. führe ein Zurücksetzen an diesem durch.
+<ul>
+<li>Bei IKEA ist das meist ein sechsmaliges An- und Ausschalten.</li>
+<li>Oft befindet sich ein entsprechender Knopf versteckt, teils unter der Batterie-Klappe, der für eine Weile (10 bis 25 Sekunden) gedrückt gehalten werden muss, bis eine LED blinkt.</li>
+</ul>
+</li>
+<li>Das Gerät sollte jetzt in Ruhe mit dem Mini-Computer zurückgelassen werden.</li>
+<li>Wenn der Anlernprozess erfolgreich war, erscheint das Gerät in der Geräte-Liste mit einem kryptischen Gerätenamen.
+<ul>
+<li>Bei Schaltern und Knöpfen kann es helfen, ab und an die Taste zu betätigen (aber Achtung, nicht die Reset-Taste!).</li>
+<li>Sollte das Gerät nicht erfolgreich hinzugefügt worden sein, lohnt es sich, einen Neustart durchzuführen.</li>
+<li>Ist ein Gerät in der Liste, wurde allerdings nicht erkannt und ist mit einem Fehler versehen, musst du das Gerät entfernen. Das kannst du mit der Option &quot;Erzwinge Entfernen&quot; tun.</li>
+</ul>
+</li>
+<li>Nicht vergessen: Das neue Gerät sollte einen &quot;sprechenden&quot; Namen bekommen, also einen Namen, der auf die Funktion hinweist. Dazu rechts auf den blauen Button &quot;Umbenennen&quot; gehen. Es ist empfehlenswert, einen Namen zu wählen, der die Funktion und den Einsatzzweck beschreibt. Weitere eindeutige Indikatoren wie Hersteller (sollte nur ein Gerät dieses Typen vom Hersteller vorliegen) können ebenfalls sinnvoll sein.</li>
+<li>Mit einem Click auf das Gerät oder unter dem Reiter Dashboard, kann das neue Gerät nun getestet werden. Dort können Lampen bedient werden und von Sensoren wie Tür-Kontakte oder Temperatur-Sensoren der Status abgelesen werden, also die gemessene Temperatur oder ob die Tür geschlossen oder geöffnet ist.</li>
+</ul>
+<h2 id="gert-nutzen">Gerät nutzen</h2>
+<p>Die nachfolgenden Hinweise setzen voraus, dass bereits ein tieferes Verständnis von dem Umgang mit der Technik besteht. Zwar können diese Punkte auch von Einsteigern umgesetzt werden, allerdings werden die genutzten Technologien an dieser Stelle nicht näher erläutert.</p>
+<ul>
+<li>Das Gerät ist jetzt in NodeRed bei den Zigbee2MQTT-Nodes zu finden oder per MQTT selbst:
+<ul>
+<li>In NodeRed muss im z2m-Node aktualisiert werden. Bei Buttons oder anderen Geräten muss dabei manchmal auch das Gerät ein oder zwei Mal ausgelöst werden (beispielsweise indem eine Lampe an und aus gemacht wird oder ein Tür-Kontakt geöffnet und geschlossen wird), um alle Funktionen verfügbar zu machen.</li>
+<li>Das Gerät ist über das MQTT-Topic &quot;zigbee2mqtt/&lt;Geräte-Name&gt;&quot; erreichbar. Möchte man beispielsweise eine Glühbirne über MQTT schalten, kann an das Topic &quot;zigbee2mqtt/&lt;Geräte-Name&gt;/set&quot; die Nachricht &quot;TOGGLE&quot; gesendet werden.</li>
+</ul>
+</li>
+<li>Manche Geräte können über Zigbee2MQTT geupdatet werden. Hierfür bitte die Update-Kurzanleitung beachten.</li>
+<li>Ein schneller Implementierungs-Test mittels NodeRed und einem weiteren Gerät kann sinnvoll sein.
+<ul>
+<li>Handelt es sich bei dem neuen Gerät um eine Glühbirne, kann diese mittels eines Schalters oder Türkontaktes via TOGGLE oder ON/OFF eingebunden werden.</li>
+<li>Handelt es sich um ein anderes Gerät, kann dieses ebenfalls eine Glühbirne ansprechen. Neben dem Anschalten von Glühbirnen ist ein Farbwechsel oder ein ALERT ebenfalls eine gute Testmethode.</li>
+</ul>
+</li>
+<li>Optional, aber zu empfehlen: Gerät im NodeRed-Dashboard einbinden:
+<ul>
+<li>Einmal mit einer Textbox, um dessen Signale zu observieren.</li>
+<li>Ist es steuerbar, dann mit Buttons und Switches.</li>
+</ul>
+<!--EndFragment-->
+</li>
+</ul>
+
+                </div>
+            </div> 
+        </div> 
+        
+            <footer class="footer is-hidden-print is-primary">
+        <div class="columns content is-small has-text-centered footer-logos">
+            <div class="column has-text-right"><div class="page-owner">
+                <p class="title" class="has-text-left">Eine Seite von</p>
+                <img src="/assets/img/logos/INTIA_Plattform_Logos_TH_weiss.png">
+                <img src="/assets/img/logos/INTIA_Plattform_Logos_Dites_weiss.png">
+                <div>
+                    <div class="title">www.intia.de</div>
+                        TH-Köln | DITES<br>
+                        Campus Südstadt<br>
+                        Ubierring 48<br>
+                        50678 Köln
+        
+                </div>
+            </div></div>
+            <div class="column has-text-left"><div class="page-sponsor">                
+                <img class="footer-logo-2" src="/assets/img/logos/BMBF_logo.jpg">
+            </div></div>
+
+        </div>
+
+        <div class="content is-small has-text-centered">
+            <p class="">INTIA, 2021</p>
+        </div>
+    
+</footer>
+
+        
+    </body>
+</html>

@@ -1,0 +1,284 @@
+<!--
+The Default layout that everything is using 
+-->
+
+<!-- Control the width with, if sidebars or menus should appear   -->
+
+
+<!DOCTYPE html>
+<html id="default-layout">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <!--<script src="https://methods.intia.de/src/radar/radar.js"></script>-->
+        <script src="/assets/js/radar.js"></script>
+        <!--<link rel="stylesheet" href="https://methods.intia.de/src/radar/radar.css" />-->
+    
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Anleitung der Erstinbetriebnahme des INTIA-Koffers | INTIA</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Anleitung der Erstinbetriebnahme des INTIA-Koffers" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="INTIA Escape game explanation page" />
+<meta property="og:description" content="INTIA Escape game explanation page" />
+<link rel="canonical" href="http://localhost:4000/anleitungen/erstbenutzung" />
+<meta property="og:url" content="http://localhost:4000/anleitungen/erstbenutzung" />
+<meta property="og:site_name" content="INTIA" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Anleitung der Erstinbetriebnahme des INTIA-Koffers" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"INTIA Escape game explanation page","headline":"Anleitung der Erstinbetriebnahme des INTIA-Koffers","url":"http://localhost:4000/anleitungen/erstbenutzung"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- head scripts -->
+<script src="https://unpkg.com/@botpoison/browser"></script>
+<script type="module" src="/assets/js/main.js"async></script></head>
+
+    <body>
+        <nav class="navbar is-hidden-print is-primary" x-data="{ openNav: false }">
+    <div class="container logo-container">
+        <a class="logo" href="https://intia.de">
+        <img src="/assets/img/INTIAlogo_farbig_horizontal.png">
+        </a>
+        <!--<img src="/assets/img/INTIA_Logoleiste_2022.png">--> 
+ <!--       <div class="navbar-brand">
+            <a href="/" class="">
+                <img src="/assets/img/logo-black.png">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
+                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-end buttons">           
+                Abschschlusstagung
+            </div>
+        </div>
+    -->
+    </div>
+</nav>
+
+    <script>
+    // this page is a demo that is not built, so fudge the module.exports support
+    // define a global `module` so that the actual source file can use it
+    window.module = {};
+  </script>
+  <script src="/assets/js/confetti.js"></script>
+  <script>
+    // define the `module.exports` as the `confetti` global, the way that the
+    // cdn distributed file would
+    window.confetti = module.exports;
+  </script>
+
+<script>
+    window.addEventListener('load', (event) => {
+        loadConfetti()
+    });
+    function loadConfetti() {
+        confetti({ particleCount: 200,
+        spread: 90,
+        origin: { y: 0.6 }
+        });
+    }  
+</script>
+        <div class="arrow-image is-pulled-left is-hidden-mobile">
+            <img id="scroll-up" src="/assets/img/arrow-up.svg" alt="placeholder">
+            <img id="scroll-down" src="/assets/img/arrow-up.svg" alt="placeholder"  class="is-pointed-down">     
+        </div>
+        <div class="accessibility-image is-pulled-left is-hidden-mobile">
+                <a id="changeFontsize"class="button is-rounded is-dark">
+                    <span class="icon is-small">
+                        <i class="fas icon-font-size fa-xs invert"></i>
+                        </span> 
+                    </a>    
+        </div>
+        
+            <section class="hero is-primary is-hidden-print  is-medium   subpage pdf " >
+    <div class="hero-body">
+        <div class="container">
+            
+                <h1 class="overtitle subtitle is-4">Anleitungen</h1>
+            
+            <h1 class="title is-1   title-with-overtitle ">Anleitung der Erstinbetriebnahme des INTIA-Koffers</h1>
+            
+                <img src="/assets/img/uploads/neuigkeit-koffertermin-piksl-1.jpg" alt="placeholder"  class="is-rounded is-hidden-mobile">
+            
+            
+                <p class="subtitle is-4"></p>
+            
+            
+            <div class="buttons-hero has-text-centered">
+                <a  onclick="window.history.back()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                    <span class="icon is-small">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span>Zur Übersicht</span>
+                </a>
+                <a  onclick="window.print()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                    <span>Als PDF Herunterladen</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <div id="main" class="content-wrapper has-background-primary-light">
+            
+            
+            
+            <div class="columns is-centered">
+                <div id="content" class="container column is-9-desktop is-11-tablet">
+                    
+                    <!--StartFragment-->
+<p>Herzlichen Glückwunsch! Du hast einen INTIA Koffer erworben.</p>
+<p>Um damit arbeiten zu können wird WLAN benötigt. Ähnlich wie man es vom Smartphone oder Computer kennt. Dafür gibt es zwei verschiedene Möglichkeiten: Einmal die Erstinbetriebnahme mit einem dedizierten Router und einmal ohne Router. Letzterer nutzt ein bereits existierendes WLAN. Die Nachfolgende Anleitung umfasst beide Optionen, dabei sind Schritte wo es unterschiede gibt mit einem &quot;*&quot; gekennzeichnet.</p>
+<div class="highlighter     ">  
+<h4 id="brauche-ich-einen-dedizierten-router-oder-nicht">Brauche ich einen dedizierten Router oder nicht?</h4>
+<p>Wenn du planst den Koffer in verschiedene Einrichtungen mitzunehmen und dabei unabhängig sein möchtest empfiehlt sich die Nutzung eines dedizierten Routers. Hierfür haben wir Empfehlungen in der Einkaufsliste hinterlegt.</p>
+<p>Arbeitest du innerhalb einer Einrichtung oder bist dir sicher das du an deinem Zielort WLAN hast, kannst du auf einen eigenen Router verzichten und das bereits existierende Netz nutzen. ABER: Hierbei muss man allen Bausteinen das zu nutzende Netzwerk mitteilen.</p>
+</div>
+<h2 id="anleitung-zur-erstinbetriebnahme-des-intia-koffers-">Anleitung zur Erstinbetriebnahme des INTIA-Koffers  </h2>
+<ol>
+<li>
+<p>Koffer öffnen</p>
+</li>
+<li>
+<p>*Router herausholen
+(Weißes Element mit der großen &quot;1&quot; drauf)</p>
+</li>
+<li>
+<p>*Router mit dem mitgelieferten USB-Kabel an den Strom anschließen. Der Router ist jetzt einsatzbereit.
+(Schwarzes Element mit der Nummer 5 ist ein USB-Hub, also eine Box die mit einem Stromstecker mehrere USB-Anschlüsse anbietet. Die dafür benötigten Kabel befinden sind in der Mitte unten)</p>
+</li>
+</ol>
+<div class="highlighter     ">  
+<h4 id="wenn-der-router-noch-nicht-eingerichtet-ist">Wenn der Router noch nicht eingerichtet ist</h4>
+<p>Sollte der Router noch nicht eingerichtet sein sollte zuvor die Ersteinrichtung durchgeführt werden.</p>
+<ul>
+<li>Der Anleitung des Herstellers folgen</li>
+<li>Mit einem WLAN-fähigen Gerät nachsehen, ob der Router ein WLAN freigegeben hat</li>
+<li>Bei der Router-Einrichtung dem WLAN den Namen &quot;INTIA&quot; und das Passwort &quot;BuntesLicht10&quot; geben</li>
+</ul>
+<p>Andere Namen sind möglich, benötigen aber ein paar Extraschritte beim Mini-Computer</p>
+</div>
+<ol start="4">
+<li>Mini-Computer herausholen
+(Grünes Element mit Wabenmuster im Bild oben)</li>
+</ol>
+<div class="highlighter     ">  
+<h4 id="wenn-der-mini-computer-noch-nicht-eingerichtet-ist">Wenn der Mini-Computer noch nicht eingerichtet ist</h4>
+<p>Anleitung zur Einrichtung des Mini-Computers folgen. Siehe: https://intia.de/wissen/anleitungen/installation</p>
+</div>
+<ol start="5">
+<li>Lampenfassung herausholen. Sicherstellen, dass eine Steckdose (ggf. durch Bereitstellen einer Mehrfachsteckdose oder eines Verlängerungskabel) in der Nähe ist. Lampenfassung an den Strom stecken.
+(Unten rechts im Bild. Ggfs. kann es sich hierbei auch um eine andere sogenannte GU10 Fassung handeln. Diese sieht etwas anders aus wird am genauso benutzt)</li>
+<li>Genauso mit allen anderen Elementen im Koffer verfahren, die man nutzen möchte.
+(Nicht alle Elemente im Koffer benötigen einen Stromanschluss. Diese Geräte sind Batteriebetrieben und es kann vorkommen das diese gewechselt werden müssen)</li>
+</ol>
+<h3 id="nach-der-einrichtung-des-routers-mit-dem-mini-computer-fortfahren-ein-eigenes-wlan-erstellen">Nach der Einrichtung des Routers mit dem Mini-Computer fortfahren: Ein eigenes WLAN erstellen</h3>
+<ol>
+<li>Mini-Computer an den Strom und ein paar Minuten warten
+(Hierfür ein weiteres der mitgelieferten Kabel nutzen über den USB-Hub)</li>
+<li>*Wenn das WLAN &quot;INTIA&quot; heißt, verbindet sich der Mini-Computer von selbst. Auf dem Display erscheint eine Zahlenfolge, die folgender ähnelt &quot;192.168.1.100&quot;
+(Dies ist nur bei einem Koffer mit dedizierten Router möglich)
+a. Zahlenfolge bitte als &quot;ADRESSE&quot; notieren</li>
+<li>*Wenn das WLAN anders heißen sollte:
+(Dies ist der Fall wenn man ein existierendes Netzwerk nutzt)
+a. Nach einigen Minuten erscheint ein neues WLAN mit dem Namen &quot;INTIA-(zufällige Zahlen)&quot;
+b. Mit diesem WLAN verbinden
+c. Eine Webseite wird angezeigt auf der ein WLAN eingerichtet werden kann
+d. Nach fertigem Einrichten erscheint eine Zahlenfolge die folgender ähnelt &quot;192.168.1.100&quot;
+e. Wenn dies nicht geschieht den Mini-Computer neu starten und kurz warten</li>
+<li>Nun ein internetfähiges Endgerät (PC, Tablet, Smartphone) mit dem WLAN verbinden, mit dem der Mini-Computer verbunden ist. Es erscheint die Meldung &quot;kein gesichertes Netz&quot;, das ist aber kein Grund zur Sorge. So lange man mit dem WLAN verbunden ist, ist man nicht mehr im regulären Internet, sondern in einem kleinen Raum.
+a. Bei Mobilgeräten kann es zu Problemen kommen, wenn das WLAN nicht auch einen Internetzugriff bietet. Die Mobilen Daten zu deaktivieren kann helfen</li>
+<li>In den Internet-Browser (Chrome, Firefox usw.) die zuvor Notierte &quot;ADRESSE&quot; mit dem Anhang &quot;:1880/ui&quot; eingeben (Zum Beispiel: &quot;192.168.1.100:1880/ui&quot;). Eine Seite sollte sich öffnen. Es kann sein das der Browser eine Warnung ausspricht und die Seite als &quot;nicht sicher&quot; angibt. Da es sich hierbei um eine lokale Seite (von unserem Mini-Computer) handelt und nicht eine Internetadresse kann dies Bedenkenlos geöffnet werden. Also keine Sorge!
+a. Auf dieser Seite findet man eine Grafische Oberfläche mit der man die Koffer-Inhalte steuern kann.
+b. Sollte diese Seite noch nicht vor konfiguriert sein muss der Anleitung zur: grafischen Oberfläche gefolgt werden.
+c. Z.B. kann hier das Escape Game de- und aktiviert werden.
+d. Ist das Escape Game deaktiviert, kann das Licht frei gesteuert werden. Probiere einmal mit der Lampe aus, ob es geklappt hat.</li>
+<li>Nun können Glühbirne, Knöpfe und alle anderen Bausteine hinzugefügt werden. Dafür findest du HIER eine Anleitung.</li>
+</ol>
+<p><img src="/assets/img/instructions/intia_nodered_dashboard.png" alt="" /></p>
+<p>Abschließend kann getestet werden ob nicht nur mit der notierten ADRESSE diese Seite erreicht werden kann sondern auch folgende Adressen funktionieren:</p>
+<ul>
+<li>http://intia:1880/ui - Das Dashboard</li>
+<li>http://intia:1880/ - Die Programmierumgebung</li>
+<li>http://intia:8080/ - Oberfläche zum einrichten und Steuern der Zigbee-Bausteine</li>
+</ul>
+<h4 id="gerte-die-nicht-kommerziell-erworben-wurden-sondern-zu-unseren-selbstgebauten-technik-blcken-gehren-mssen-anders-hinzugefgt-werden">Geräte, die nicht kommerziell erworben wurden, sondern zu unseren selbstgebauten Technik-Blöcken gehören, müssen anders hinzugefügt werden</h4>
+<ol>
+<li>Gerät an Strom anschließen (die meisten USB-Ports reichen hierfür aus!)</li>
+<li>Nach einiger Zeit öffnet sich ein neues WLAN ohne Passwort</li>
+<li>Nachdem mit dem WLAN verbunden, sollte sich eine Webseite öffnen</li>
+<li>Auf dieser kann ein WLAN hinzugefügt werden</li>
+</ol>
+<h3 id="grafische-oberflche">Grafische Oberfläche</h3>
+<ol>
+<li>Wir befinden uns auf der grafischen Oberfläche oder diese ist nicht erreichbar unter der zuvor notierten &quot;ADRESSE&quot; mit dem Anhang &quot;:1880/ui&quot;</li>
+<li>Dann müssen wir erst noch die Konfiguration dieser Oberfläche einrichten. Dafür geht man auf die zuvor Notierte &quot;ADRESSE&quot; und dem Anhang &quot;:1880&quot; oder http://intia:1880/.</li>
+<li>Wir sehen jetzt eine Oberfläche die sich Node-Red nennt.</li>
+<li>Sind hier noch keine Flows (Flows sind die Programm-Abläufe) vorhanden, müssen sie importiert werden (Bilder)</li>
+<li>Importiere Wunsch-Flows aus unserer Sammlung
+a. Ein Dashboard um die Webseite auf ADRESSE:1880/ui besuchbar zu machen
+b. Escape Game um das Escape Game zu installieren
+c. Verschiedene Beispiel-Flows für unsere Entwicklungen wie die Pomodoro-Kiste</li>
+<li>Geräte müssen nun den Nodes zugewiesen werden (Bilder)</li>
+</ol>
+<h3 id="escape-game">Escape Game</h3>
+<p>In diesem Teil wird kurz beschrieben wie man die Bausteine mit dem Escape Game verwendet.</p>
+<p>Handelt es sich bei dem Betriebssystem auf dem Mini-Computer um eines von INTIA vorbereitetes sollte das Escape Game bereits installiert sein. War dies nicht der Fall wurde im schritt zuvor beschreiben wie man das Escape Game nach installiert.</p>
+<!--EndFragment-->
+
+                </div>
+            </div> 
+        </div> 
+        
+            <footer class="footer is-hidden-print is-primary">
+        <div class="columns content is-small has-text-centered footer-logos">
+            <div class="column has-text-right"><div class="page-owner">
+                <p class="title" class="has-text-left">Eine Seite von</p>
+                <img src="/assets/img/logos/INTIA_Plattform_Logos_TH_weiss.png">
+                <img src="/assets/img/logos/INTIA_Plattform_Logos_Dites_weiss.png">
+                <div>
+                    <div class="title">www.intia.de</div>
+                        TH-Köln | DITES<br>
+                        Campus Südstadt<br>
+                        Ubierring 48<br>
+                        50678 Köln
+        
+                </div>
+            </div></div>
+            <div class="column has-text-left"><div class="page-sponsor">                
+                <img class="footer-logo-2" src="/assets/img/logos/BMBF_logo.jpg">
+            </div></div>
+
+        </div>
+
+        <div class="content is-small has-text-centered">
+            <p class="">INTIA, 2021</p>
+        </div>
+    
+</footer>
+
+        
+    </body>
+</html>

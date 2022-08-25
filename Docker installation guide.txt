@@ -1,0 +1,29 @@
+// Docker installieren:
+
+// Aktualisieren
+sudo apt-get update && sudo apt-get upgrade
+
+// Docker script runterladen
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+//Docker installieren
+sudo sh get-docker.sh
+
+// PI nutzer zu Docker gruppe hinzufügen
+sudo usermod -aG docker pi
+
+// PI neustarten 
+// Zum einen wird eine neue Shell benötigt damit die Gruppenzuweis klappt 
+// und zum anderen damit der Docker dienst richtig läuft)
+
+// Installation prüfen
+docker version
+
+// Funktion prüfen
+docker run hello-world
+
+// Sicherheitshalber nochmal den service zum Startup hinzufügen
+sudo systemctl enable docker
+
+
+

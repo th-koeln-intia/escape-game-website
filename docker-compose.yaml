@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  web:
+    container_name: escape-game-website
+    image: lroguet/rpi-nginx:latest
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - ~/repos/escape-game-website/_site:/var/www/html

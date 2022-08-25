@@ -1,0 +1,43 @@
+sudo apt-get update
+sudo apt-get install software-properties-common -y
+sudo apt-get install ruby-full -y
+sudo gem install jekyll
+sudo gem install bundler
+sudo gem uninstall psych (schmeißt sonst fehler beim updaten)
+sudo gem update --system (Meine testversion hatte nen problem mit bundler)
+git clone https://github.com/th-koeln-intia/escape-game-website.git
+cd escape-game-website
+sudo bundler install
+pwd (aktuellen Pfad ausgeben für später, sollte /home/pi/escape-game-website sein)
+sudo nano /lib/systemd/system/jekyll.service
+
+--------- Inhalt ------------
+
+#  sudo systemctl start jekyll.service
+#  sudo systemctl enable jekyll.service
+
+[Unit]
+Description=Jekyll service
+After=syslog.target network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/escape-game-website
+ExecStart=/usr/local/bin/jekyll serve --host 0.0.0.0 --source "/home/pi/escape-game-website"
+ExecStop=/usr/bin/pkill -f jekyll
+Restart=always
+TimeoutStartSec=60
+RestartSec=60
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=jekyll
+
+[Install]
+WantedBy=multi-user.target network-online.target
+
+---------------------
+
+sudo systemctl daemon-reload
+sudo systemctl enable sample.service
+
+sudo reboot
