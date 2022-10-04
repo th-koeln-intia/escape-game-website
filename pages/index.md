@@ -1,8 +1,7 @@
 ---
-title: "Du hast es geschafft!"
-title_above: Glückwunsch
-subtitle: |
-  Hier findest du mehr Informationen zum INTIA Escape game.
+title: "Ihr habt es geschafft!"
+title_above: Herzlichen Glückwunsch
+subtitle: Hier findet ihr die Steuerungszentrale des Escape Games und weitere Informationen!
 hero_tags: toppage
 permalink: /
 ---
@@ -10,6 +9,9 @@ permalink: /
 # Übersicht
 
 <div class="button-row">
+<a href="http://localhost:1880/ui" class="button is-rounded is-dark">
+  <span>Steuerungszentrale</span>
+</a>
 <a href="#was-kommt-als-nchstes" class="button is-rounded is-dark">
   <span>Was kommt als nächstes?</span>
 </a>
