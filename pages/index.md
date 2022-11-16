@@ -28,14 +28,17 @@ permalink: /
 Ihr habt das Escape Game erfolgreich überwunden und habt jetzt die volle Kontrolle über die Steuerzentrale. Die Steuerzentrale könnt ihr **[hier](http://localhost:1880/ui)** öffnen. In dieser könnt ihr in Ruhe die verschiedenen Bausteine des Escape Games ausprobieren und damit kreativ werden. Wie wäre es zum Beispiel damit anzufangen die Lampe anders zu färben?
 <br>
 <br>
-<a href="http://localhost:1880/ui" class="button is-rounded is-dark">
-<span>Zur Steuerungszentrale</span>
-</a>
-<br>
+
+<div class="center">
+  <a href="http://localhost:1880/ui" class="button is-rounded is-dark">
+  <span><h2><bf>Zur Steuerungszentrale</bf></h2></span>
+  </a>
+</div>
 <br>
 Ihr könnt jederzeit auf diese Seite zurückkehren, auf dieselbe art und weise wie ihr das erste mal hier gelandet seid.
 <br>
 <br>
+
 _Sollte der Link nicht klappen könnt ihr im Browser einfach http://localhost:1880/ui eingeben um zur Steuerzentrale zu gelangen_
 
 # Node-Red
@@ -48,17 +51,15 @@ Klingt kompliziert? Ist es aber nicht! Ihr seit bereits im WLAN der Technik-Baus
 
 <br>
 <br>
+<div class="center">
 <a href="/#flow" onclick="javascript:event.target.port=1880" class="button is-rounded is-dark">
-<span>Zu Node-RED wechseln</span>
+<span><h2><bf>Zu Node-RED wechseln</bf></h2></span>
 </a>
+</div>
 <br>
 <br>
 
-Auf Node-Red wird euch gezeigt, wie das Escape Game durch verschiedene Regeln programmiert wurde. Das Escape-Game ist ein Beispiel, wie Verhaltensweisen von Technik-Bausteinen festgelegt werden können.
-
-Wenn ihr nun selbst loslegen möchtet, müsst ihr dafür den Flow zum Escape-Game deaktivieren. Das macht ihr, indem ihr einen Doppel-Klick auf den Namen der Seite macht und ganz unten bei "Enabled" den Punkt wegklickt. Nun könnt ihr selbst verschiedene Funktionen ausprobieren. Um einen neuen Flow zu öffnen, klickt oben rechts neben den Namen der Seiten auf das Plus. Wenn ihr etwas fertig programmiert habt, könnt ihr das mit dem großen roten Knopf oben rechts abschließen und testen.
-
-TIPP! Ihr könnt Node-Red immer wieder in den Ursprungszustand zurücksetzen. Dafür müsst ihr euren eigenen Flow deaktivieren und den Flow des Escape-Games wieder aktivieren. Wenn der Flow des Escape Games nicht mehr funktioniert, dann könnt ihr die Moderation um Hilfe fragen.
+**Schaut für weitere Informationen in die Anleitung der Programmier-Plättchen. Dort wird auch Node Red eingeführt!**
 
 # Anleitungen
 
