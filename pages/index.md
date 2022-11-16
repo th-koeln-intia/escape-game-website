@@ -11,6 +11,9 @@ permalink: /
 # Übersicht
 
 <div class="button-row">
+<a href="http://localhost:1880/ui" class="button is-rounded is-dark">
+  <span>Steuerungszentrale</span>
+</a>
 <a href="#was-kommt-als-nchstes" class="button is-rounded is-dark">
   <span>Die Steuerzentrale</span>
 </a>
@@ -22,13 +25,40 @@ permalink: /
 
 # Die Steuerzentrale
 
-Ihr habt das Escape Game erfolgreich überwunden und habt jetzt die volle Kontrolle über die Steuerzentrale. Die Steuerzentrale könnt ihr **[hier](http://192.168.1.100:1880/ui)** öffnen. In dieser könnt ihr in Ruhe die verschiedenen Bausteine des Escape Games ausprobieren und damit kreativ werden. Wie wäre es zum Beispiel damit anzufangen die Lampe anders zu färben?
+Ihr habt das Escape Game erfolgreich überwunden und habt jetzt die volle Kontrolle über die Steuerzentrale. Die Steuerzentrale könnt ihr **[hier](http://localhost:1880/ui)** öffnen. In dieser könnt ihr in Ruhe die verschiedenen Bausteine des Escape Games ausprobieren und damit kreativ werden. Wie wäre es zum Beispiel damit anzufangen die Lampe anders zu färben?
+<br>
+<br>
+<a href="http://localhost:1880/ui" class="button is-rounded is-dark">
+<span>Zur Steuerungszentrale</span>
+</a>
 <br>
 <br>
 Ihr könnt jederzeit auf diese Seite zurückkehren, auf dieselbe art und weise wie ihr das erste mal hier gelandet seid.
 <br>
 <br>
-_Sollte der Link nicht klappen könnt ihr im Browser einfach http://192.168.1.100:1880/ui eingeben um zur Steuerzentrale zu gelangen_
+_Sollte der Link nicht klappen könnt ihr im Browser einfach http://localhost:1880/ui eingeben um zur Steuerzentrale zu gelangen_
+
+# Node-Red
+
+Ihr könnt Node-Red nutzen, um die eigenen Ideen und Lösungen für Alltagsprobleme zu realisieren. Programmieren mit Node-Red und das Legen der Programmier-Plättchen können gut miteinander verbunden werden. Über Node-Red könnt ihr alle Technik-Bausteine steuern und sie programmieren.
+
+Node-Red ist ein grafische Entwicklungsoberfläche, in der Regeln und Verhalten der Technik-Bausteine programmiert werden können. Regeln und Verhalten nennen sich Flows. Flows können einfach angepasst oder erweitert werden. Um Node-Red nutzen zu können, braucht es einen eigenen Computer (hierfür kann das Tablet verwendet werden). Auf dem Mini-Computer ist die Node-RED Entwicklungsumgebung schon vorinstalliert, sodass das Tablet mit dem Mini-Computer verbunden werden muss.
+
+Klingt kompliziert? Ist es aber nicht! Ihr seit bereits im WLAN der Technik-Bausteine und damit ist es nur einen klick entfernt.
+
+<br>
+<br>
+<a href="/#flow" onclick="javascript:event.target.port=1880" class="button is-rounded is-dark">
+<span>Zu Node-RED wechseln</span>
+</a>
+<br>
+<br>
+
+Auf Node-Red wird euch gezeigt, wie das Escape Game durch verschiedene Regeln programmiert wurde. Das Escape-Game ist ein Beispiel, wie Verhaltensweisen von Technik-Bausteinen festgelegt werden können.
+
+Wenn ihr nun selbst loslegen möchtet, müsst ihr dafür den Flow zum Escape-Game deaktivieren. Das macht ihr, indem ihr einen Doppel-Klick auf den Namen der Seite macht und ganz unten bei "Enabled" den Punkt wegklickt. Nun könnt ihr selbst verschiedene Funktionen ausprobieren. Um einen neuen Flow zu öffnen, klickt oben rechts neben den Namen der Seiten auf das Plus. Wenn ihr etwas fertig programmiert habt, könnt ihr das mit dem großen roten Knopf oben rechts abschließen und testen.
+
+TIPP! Ihr könnt Node-Red immer wieder in den Ursprungszustand zurücksetzen. Dafür müsst ihr euren eigenen Flow deaktivieren und den Flow des Escape-Games wieder aktivieren. Wenn der Flow des Escape Games nicht mehr funktioniert, dann könnt ihr die Moderation um Hilfe fragen.
 
 # Anleitungen
 
