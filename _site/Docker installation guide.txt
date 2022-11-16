@@ -1,4 +1,4 @@
-// Docker installieren:
+// -------------- Docker installieren ------------------
 
 // Aktualisieren
 sudo apt-get update && sudo apt-get upgrade
@@ -12,9 +12,41 @@ sudo sh get-docker.sh
 // PI nutzer zu Docker gruppe hinzufügen
 sudo usermod -aG docker pi
 
+// PI neustarten 
+// Zum einen wird eine neue Shell benötigt damit die Gruppenzuweis klappt 
+// und zum anderen damit der Docker dienst richtig läuft)
+
 // Installation prüfen
 docker version
 
 // Funktion prüfen
 docker run hello-world
 
+// Sicherheitshalber nochmal den service zum Startup hinzufügen
+sudo systemctl enable docker
+
+// -------------- Docker compose installieren -------------
+
+// Falls noch fehlend ressourcen installieren
+sudo apt-get install libffi-dev libssl-dev
+sudo apt install python3-dev
+sudo apt-get install -y python3 python3-pip
+
+// Docker-Compose installieren (alte version weil compose dependancy hell ist)
+sudo pip3 install docker-compose==1.23.2
+
+// -------------- Starten des Containers ------------------
+
+// Ins home verzeichnis wechseln
+cd ~
+
+//Repo ordner erstellen
+mkdir repos
+cd repos
+
+// Repo klonen
+git clone https://github.com/th-koeln-intia/escape-game-website.git
+cd escape-game-website
+
+// Docker-Compose starten
+docker-compose up -d

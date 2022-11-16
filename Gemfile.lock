@@ -52,13 +52,9 @@ GEM
       commonmarker (~> 0.17.6)
       jekyll-commonmark (~> 1.2)
       rouge (>= 2.0, < 4.0)
-    jekyll-feed (0.16.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-github-metadata (2.15.0)
       jekyll (>= 3.4, < 5.0)
       octokit (~> 4.0, != 4.4.0)
-    jekyll-hyperlinkify-glossary (0.1.4)
-      jekyll (>= 3.7)
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate-v2 (3.0.0)
@@ -124,9 +120,7 @@ DEPENDENCIES
   jekyll
   jekyll-coffeescript
   jekyll-commonmark-ghpages
-  jekyll-feed
   jekyll-github-metadata
-  jekyll-hyperlinkify-glossary
   jekyll-optional-front-matter
   jekyll-paginate-v2
   jekyll-redirect-from
