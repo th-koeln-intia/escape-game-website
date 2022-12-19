@@ -89,6 +89,7 @@ The Default layout that everything is using
 <script>
     window.addEventListener('load', (event) => {
         loadConfetti()
+        setHref()
     });
     function loadConfetti() {
         confetti({ particleCount: 200,
@@ -96,6 +97,12 @@ The Default layout that everything is using
         origin: { y: 0.6 }
         });
     }  
+    function setHref() {
+        var elements = document.getElementsByClassName('node-red-hyperlink')
+        Array.from(elements).forEach(element => {
+            element.href = window.location.protocol + "//" + window.location.hostname + ":1880"+ element.getAttribute('href');
+        });
+    }
 </script>
         <div class="arrow-image is-pulled-left is-hidden-mobile">
             <img id="scroll-up" src="/assets/img/arrow-up.svg" alt="placeholder">

@@ -89,6 +89,7 @@ The Default layout that everything is using
 <script>
     window.addEventListener('load', (event) => {
         loadConfetti()
+        setHref()
     });
     function loadConfetti() {
         confetti({ particleCount: 200,
@@ -96,6 +97,12 @@ The Default layout that everything is using
         origin: { y: 0.6 }
         });
     }  
+    function setHref() {
+        var elements = document.getElementsByClassName('node-red-hyperlink')
+        Array.from(elements).forEach(element => {
+            element.href = window.location.protocol + "//" + window.location.hostname + ":1880"+ element.getAttribute('href');
+        });
+    }
 </script>
         <div class="arrow-image is-pulled-left is-hidden-mobile">
             <img id="scroll-up" src="/assets/img/arrow-up.svg" alt="placeholder">
@@ -183,13 +190,25 @@ Ihr könnt jederzeit auf diese Seite zurückkehren, auf dieselbe art und weise w
 <br>
 <br>
 <div class="center">
-<a href="/#flow" onclick="javascript:event.target.port=1880" class="button is-rounded is-dark">
+<a href="/#flow" class="button is-rounded is-dark node-red-hyperlink">
 <span><h2><bf>Zu Node-RED wechseln</bf></h2></span>
 </a>
 </div>
 <br>
 <br>
 <p><strong>Schaut für weitere Informationen in die Anleitung der Programmier-Plättchen. Dort wird auch Node Red eingeführt!</strong></p>
+<h1 id="alles-zurcksetzen">Alles zurücksetzen</h1>
+<p>Etwas funktioniert nicht wie beschrieben, oder ihr habt Sorge etwas verändert zu haben? Kein Problem. Mit dem nachfolgenden Button könnt ihr alles zurücksetzen. ABER denkt dran das damit auch alle eure Änderungen weg sind!
+Wichtig: Lasst den Geräten etwas zeit damit alles neustarten kann. Es kann also einen Augenblick dauern bis die Seiten wieder Verfügbar sind.</p>
+<br>
+<br>
+<div class="center">
+<a href="/restore" class="button is-rounded is-dark node-red-hyperlink">
+<span><h2><bf>Alles Zurücksetzen</bf></h2></span>
+</a>
+</div>
+<br>
+<br>
 <h1 id="anleitungen">Anleitungen</h1>
 <p>In diesem Bereich findet ihr nochmal alle Anleitungen falls ihr sie noch einmal benötigt.</p>
 <ul>

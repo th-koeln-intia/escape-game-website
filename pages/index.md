@@ -52,7 +52,7 @@ Klingt kompliziert? Ist es aber nicht! Ihr seit bereits im WLAN der Technik-Baus
 <br>
 <br>
 <div class="center">
-<a href="/#flow" onclick="javascript:event.target.port=1880" class="button is-rounded is-dark">
+<a href="/#flow" class="button is-rounded is-dark node-red-hyperlink">
 <span><h2><bf>Zu Node-RED wechseln</bf></h2></span>
 </a>
 </div>
@@ -60,6 +60,21 @@ Klingt kompliziert? Ist es aber nicht! Ihr seit bereits im WLAN der Technik-Baus
 <br>
 
 **Schaut für weitere Informationen in die Anleitung der Programmier-Plättchen. Dort wird auch Node Red eingeführt!**
+
+# Alles zurücksetzen
+
+Etwas funktioniert nicht wie beschrieben, oder ihr habt Sorge etwas verändert zu haben? Kein Problem. Mit dem nachfolgenden Button könnt ihr alles zurücksetzen. ABER denkt dran das damit auch alle eure Änderungen weg sind!
+Wichtig: Lasst den Geräten etwas zeit damit alles neustarten kann. Es kann also einen Augenblick dauern bis die Seiten wieder Verfügbar sind.
+
+<br>
+<br>
+<div class="center">
+<a href="/restore" class="button is-rounded is-dark node-red-hyperlink">
+<span><h2><bf>Alles Zurücksetzen</bf></h2></span>
+</a>
+</div>
+<br>
+<br>
 
 # Anleitungen
 

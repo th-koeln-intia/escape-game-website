@@ -39,6 +39,7 @@
 <script>
     window.addEventListener('load', (event) => {
         loadConfetti()
+        setHref()
     });
     function loadConfetti() {
         confetti({ particleCount: 200,
@@ -46,4 +47,10 @@
         origin: { y: 0.6 }
         });
     }  
+    function setHref() {
+        var elements = document.getElementsByClassName('node-red-hyperlink')
+        Array.from(elements).forEach(element => {
+            element.href = window.location.protocol + "//" + window.location.hostname + ":1880"+ element.getAttribute('href');
+        });
+    }
 </script>
