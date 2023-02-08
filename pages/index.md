@@ -30,7 +30,7 @@ Ihr habt das Escape Game erfolgreich überwunden und habt jetzt die volle Kontro
 <br>
 
 <div class="center">
-  <a href="http://localhost:1880/ui" class="button is-rounded is-dark">
+  <a href="/ui" class="button is-rounded is-dark node-red-hyperlink">
   <span><h2><bf>Zur Steuerungszentrale</bf></h2></span>
   </a>
 </div>
